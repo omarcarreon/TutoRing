@@ -78,13 +78,13 @@
     if ([category isEqualToString:@"Development"]){
         pickerData = @[@"iOS", @"Java", @"SQL", @"HTML", @"PHP", @"Android"];
     } else if([category isEqualToString:@"Business"]){
-        pickerData = @[@"iOS", @"Java", @"SQL", @"HTML", @"PHP", @"Android"];
+        pickerData = @[@"Finance", @"Sales", @"Strategy", @"Project Management", @"Operations" ];
     } else if ([category isEqualToString:@"Design"]) {
-        pickerData = @[@"iOS", @"Java", @"SQL", @"HTML", @"PHP", @"Android"];
+        pickerData = @[@"Web Design", @"Graphic Design", @"Interior Design", @"Arhitectural Design"];
     } else if ([category isEqualToString:@"Marketing"]) {
-        pickerData = @[@"iOS", @"Java", @"SQL", @"HTML", @"PHP", @"Android"];
-    } else if ([category isEqualToString:@"Design"]) {
-        pickerData = @[@"iOS", @"Java", @"SQL", @"HTML", @"PHP", @"Android"];
+        pickerData = @[@"Digital Marketing", @"Branding", @"Advertising", @"Growth Hacking"];
+    } else if ([category isEqualToString:@"Engineering"]) {
+        pickerData = @[@"Physics", @"Dynamics", @"Probability and Statistics", @"Linear Algebra"];
     } else {
         pickerData = @[@"iOS", @"Java", @"SQL", @"HTML", @"PHP", @"Android"];
     }
