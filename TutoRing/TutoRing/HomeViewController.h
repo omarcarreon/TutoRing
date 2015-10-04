@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "SlideNavigationController.h"
+#import <Mapkit/MapKit.h>
 
-@interface HomeViewController : UIViewController <SlideNavigationControllerDelegate>
+@interface HomeViewController : UIViewController <SlideNavigationControllerDelegate, MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *btnLeftMenu;
 @property (strong, nonatomic) IBOutlet UIButton *btnRightMenu;
+@property (strong, nonatomic) IBOutlet MKMapView *tutoRingMapView;
 
 
 @end

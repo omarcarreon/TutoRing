@@ -186,6 +186,23 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.89165088380000002" green="0.39229240119999997" blue="0.33431130240000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ftu-wD-edc">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <animations/>
+                            </mapView>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hou-e7-aBM">
+                                <rect key="frame" x="327" y="614" width="40" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvZ-5a-ILk">
+                                <rect key="frame" x="332" y="621" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" image="location"/>
+                                <connections>
+                                    <action selector="returnToUserLocation:" destination="iIF-Wm-X4f" eventType="touchUpInside" id="Jul-b5-XL2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.44429029920000002" blue="0.37660843519999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -195,6 +212,8 @@
                     <connections>
                         <outlet property="btnLeftMenu" destination="iKb-hR-ki3" id="RGI-EH-jN1"/>
                         <outlet property="btnRightMenu" destination="QLy-cL-9ec" id="xIS-ir-Mvq"/>
+                        <outlet property="mapButtonsView" destination="hou-e7-aBM" id="0cA-pz-jVe"/>
+                        <outlet property="tutoRingMapView" destination="Ftu-wD-edc" id="1TC-I4-2aL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QES-Dt-YOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -315,6 +334,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="location" width="64" height="64"/>
         <image name="logo.png" width="4034" height="4020"/>
         <image name="menuSelected" width="64" height="64"/>
         <image name="searchSelected" width="64" height="64"/>
