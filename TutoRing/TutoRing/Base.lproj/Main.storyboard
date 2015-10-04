@@ -462,11 +462,8 @@
                                     <color key="titleColor" red="1" green="0.4399618823" blue="0.37493519990000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-<<<<<<< HEAD
-                                    <segue destination="GYh-EK-k2O" kind="presentation" identifier="selectcourses" modalTransitionStyle="flipHorizontal" id="f2U-ex-ohk"/>
-=======
+
                                     <segue destination="wBR-WK-mzj" kind="presentation" id="P6A-N4-jbi"/>
->>>>>>> origin/signupcontroller
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8TA-xa-M1V">
@@ -530,27 +527,7 @@
             <point key="canvasLocation" x="377.5" y="1162.5"/>
         </scene>
         <!--Select Course View Controller-->
-<<<<<<< HEAD
-        <scene sceneID="oEx-TV-hTj">
-            <objects>
-                <viewController id="GYh-EK-k2O" customClass="SelectCourseViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="29F-bx-mf5"/>
-                        <viewControllerLayoutGuide type="bottom" id="8d5-9t-JOK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c1l-RO-xsu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What would you like to learn?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNr-V5-USy">
-                                <rect key="frame" x="-51" y="28" width="452" height="51"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ox-N7-3SW">
-=======
+
         <scene sceneID="dbS-Pv-7GH">
             <objects>
                 <viewController id="wBR-WK-mzj" customClass="SelectCourseViewController" sceneMemberID="viewController">
@@ -570,29 +547,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEr-Vt-pPW">
->>>>>>> origin/signupcontroller
                                 <rect key="frame" x="20" y="28" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
                             </button>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkk-e5-3m1">
-                                <rect key="frame" x="102" y="99" width="147" height="21"/>
-=======
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please choose a Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDr-0c-81u">
                                 <rect key="frame" x="91" y="159" width="199" height="21"/>
->>>>>>> origin/signupcontroller
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vf8-ya-Kzy">
-                                <rect key="frame" x="42" y="128" width="290" height="164"/>
-                                <animations/>
-                            </pickerView>
-=======
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-4N-pQh">
                                 <rect key="frame" x="216" y="412" width="102" height="42"/>
                                 <animations/>
@@ -634,25 +600,18 @@
                                     <action selector="submit:" destination="wBR-WK-mzj" eventType="touchUpInside" id="Gz0-ye-QR4"/>
                                 </connections>
                             </button>
->>>>>>> origin/signupcontroller
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.4399618823" blue="0.37493519990000002" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-<<<<<<< HEAD
-                                <exclude reference="4Ox-N7-3SW"/>
-=======
+
                                 <exclude reference="qEr-Vt-pPW"/>
->>>>>>> origin/signupcontroller
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-<<<<<<< HEAD
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R9J-Y6-egh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-=======
+
                     <connections>
                         <outlet property="backbutton" destination="wkf-NG-pwm" id="HXd-FZ-zFi"/>
                         <outlet property="continuebutton" destination="gRS-4N-pQh" id="nGi-qH-gyt"/>
@@ -662,7 +621,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfH-R1-4XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
->>>>>>> origin/signupcontroller
             </objects>
             <point key="canvasLocation" x="1009.5" y="1162.5"/>
         </scene>
