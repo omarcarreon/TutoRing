@@ -12,6 +12,7 @@
 @interface LeftMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, assign) BOOL slideOutAnimationEnabled;
-@property (nonatomic, strong) UITableView* configMenu;
+@property (weak, nonatomic) IBOutlet UITableView *configMenu;
+@property (weak, nonatomic) IBOutlet UIImageView *imavProfileImage;
 
 @end
