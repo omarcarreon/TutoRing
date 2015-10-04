@@ -16,5 +16,7 @@
 
 @interface RightMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UIButton *searchButton;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "RightMenuViewController.h"
-
+#import "HomeViewController.h"
 @implementation RightMenuViewController
 
 #pragma mark - UIViewController Methods -
@@ -21,5 +21,21 @@
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
+
+- (IBAction)searching:(id)sender {
+    
+    [[SlideNavigationController sharedInstance] closeMenuWithCompletion:^(void) {}];
+//    
+//    [[SlideNavigationController sharedInstance] closeMenuWithCompletion:^(void) {
+//        
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+        HomeViewController * vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+       vc.searchString = _textField.text;
+//
+//    
+//    }];
+}
+
 
 @end

@@ -221,10 +221,37 @@
                     <view key="view" contentMode="scaleToFill" id="608-s0-0KV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are you searching for?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-iH-3Hk">
+                                <rect key="frame" x="167" y="74" width="156" height="54"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="i.e. Math, iOS, Web" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNo-Wo-k6T">
+                                <rect key="frame" x="136" y="182" width="168" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acc-UC-qKd">
+                                <rect key="frame" x="325" y="182" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" image="searchSelected"/>
+                                <connections>
+                                    <action selector="searching:" destination="UqZ-Hm-0oN" eventType="touchUpInside" id="u4w-Jt-mhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.89165088380000002" green="0.39229240119999997" blue="0.33431130240000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchButton" destination="acc-UC-qKd" id="8ru-hb-dzO"/>
+                        <outlet property="textField" destination="kNo-Wo-k6T" id="EgQ-gO-7O3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNZ-za-JJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +357,7 @@
         <!--Home View Controller-->
         <scene sceneID="HpC-fM-Wb7">
             <objects>
-                <viewController id="iIF-Wm-X4f" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="iIF-Wm-X4f" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mA0-Db-Yf7"/>
                         <viewControllerLayoutGuide type="bottom" id="7WG-tj-MH3"/>
@@ -346,11 +373,6 @@
                                         <rect key="frame" x="20" y="26" width="30" height="30"/>
                                         <animations/>
                                         <state key="normal" image="menuSelected"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLy-cL-9ec">
-                                        <rect key="frame" x="326" y="27" width="30" height="30"/>
-                                        <animations/>
-                                        <state key="normal" image="searchSelected"/>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aQK-oG-6IJ">
                                         <rect key="frame" x="115" y="27" width="146" height="29"/>
@@ -382,6 +404,27 @@
                                     <action selector="returnToUserLocation:" destination="iIF-Wm-X4f" eventType="touchUpInside" id="Jul-b5-XL2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="i.e. Math, iOS, PHP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mb3-ZU-2xN">
+                                <rect key="frame" x="171" y="86" width="148" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="92V-7u-P0J">
+                                <rect key="frame" x="326" y="79" width="43" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFw-02-bAJ">
+                                        <rect key="frame" x="6" y="7" width="30" height="30"/>
+                                        <animations/>
+                                        <state key="normal" image="searchSelected"/>
+                                        <connections>
+                                            <action selector="search:" destination="iIF-Wm-X4f" eventType="touchUpInside" id="324-Ec-6i9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.44429029920000002" blue="0.37660843519999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -390,8 +433,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btnLeftMenu" destination="iKb-hR-ki3" id="RGI-EH-jN1"/>
-                        <outlet property="btnRightMenu" destination="QLy-cL-9ec" id="xIS-ir-Mvq"/>
+                        <outlet property="buttonView" destination="GFw-02-bAJ" id="TcN-qo-he3"/>
                         <outlet property="mapButtonsView" destination="hou-e7-aBM" id="0cA-pz-jVe"/>
+                        <outlet property="textField" destination="mb3-ZU-2xN" id="nBx-XQ-qlW"/>
                         <outlet property="tutoRingMapView" destination="Ftu-wD-edc" id="1TC-I4-2aL"/>
                     </connections>
                 </viewController>

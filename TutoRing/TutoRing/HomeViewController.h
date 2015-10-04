@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnLeftMenu;
 @property (strong, nonatomic) IBOutlet UIButton *btnRightMenu;
 @property (strong, nonatomic) IBOutlet MKMapView *tutoRingMapView;
-
+@property NSString* searchString;
+@property CLLocationManager* location;
+@property (strong, nonatomic) IBOutlet UIButton *buttonView;
 
 @end
