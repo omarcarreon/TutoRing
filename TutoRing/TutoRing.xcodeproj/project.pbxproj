@@ -15,6 +15,15 @@
 		1A8A14BD1BC0636B007E7533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A14BB1BC0636B007E7533 /* Main.storyboard */; };
 		1A8A14BF1BC0636B007E7533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A14BE1BC0636B007E7533 /* Assets.xcassets */; };
 		1A8A14C21BC0636B007E7533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A14C01BC0636B007E7533 /* LaunchScreen.storyboard */; };
+		8B9D3A8F1BC0B9DB00B1FAC7 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A8E1BC0B9DB00B1FAC7 /* LeftMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3A921BC0B9EA00B1FAC7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A911BC0B9EA00B1FAC7 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3A951BC0BA0D00B1FAC7 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A941BC0BA0D00B1FAC7 /* RightMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3AA21BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A991BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3AA31BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A9B1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3AA41BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A9D1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3AA51BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A9F1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3AA61BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3AA11BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */; settings = {ASSET_TAGS = (); }; };
+		8B9D3AA91BC0BA5700B1FAC7 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3AA81BC0BA5700B1FAC7 /* SlideNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,25 @@
 		1A8A14BE1BC0636B007E7533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A8A14C11BC0636B007E7533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A8A14C31BC0636B007E7533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B9D3A8D1BC0B9DB00B1FAC7 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		8B9D3A8E1BC0B9DB00B1FAC7 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		8B9D3A901BC0B9EA00B1FAC7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8B9D3A911BC0B9EA00B1FAC7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8B9D3A931BC0BA0D00B1FAC7 /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
+		8B9D3A941BC0BA0D00B1FAC7 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
+		8B9D3A971BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
+		8B9D3A981BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
+		8B9D3A991BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorFade.m; sourceTree = "<group>"; };
+		8B9D3A9A1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorScale.h; sourceTree = "<group>"; };
+		8B9D3A9B1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorScale.m; sourceTree = "<group>"; };
+		8B9D3A9C1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorScaleAndFade.h; sourceTree = "<group>"; };
+		8B9D3A9D1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorScaleAndFade.m; sourceTree = "<group>"; };
+		8B9D3A9E1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorSlide.h; sourceTree = "<group>"; };
+		8B9D3A9F1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlide.m; sourceTree = "<group>"; };
+		8B9D3AA01BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorSlideAndFade.h; sourceTree = "<group>"; };
+		8B9D3AA11BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlideAndFade.m; sourceTree = "<group>"; };
+		8B9D3AA71BC0BA5700B1FAC7 /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
+		8B9D3AA81BC0BA5700B1FAC7 /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +91,15 @@
 		1A8A14B11BC0636A007E7533 /* TutoRing */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D3AA71BC0BA5700B1FAC7 /* SlideNavigationController.h */,
+				8B9D3AA81BC0BA5700B1FAC7 /* SlideNavigationController.m */,
+				8B9D3A961BC0BA2B00B1FAC7 /* Animations */,
+				8B9D3A931BC0BA0D00B1FAC7 /* RightMenuViewController.h */,
+				8B9D3A941BC0BA0D00B1FAC7 /* RightMenuViewController.m */,
+				8B9D3A901BC0B9EA00B1FAC7 /* HomeViewController.h */,
+				8B9D3A911BC0B9EA00B1FAC7 /* HomeViewController.m */,
+				8B9D3A8D1BC0B9DB00B1FAC7 /* LeftMenuViewController.h */,
+				8B9D3A8E1BC0B9DB00B1FAC7 /* LeftMenuViewController.m */,
 				1A8A14B51BC0636A007E7533 /* AppDelegate.h */,
 				1A8A14B61BC0636A007E7533 /* AppDelegate.m */,
 				1A8A14BB1BC0636B007E7533 /* Main.storyboard */,
@@ -85,6 +122,24 @@
 				1A8A14B31BC0636A007E7533 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B9D3A961BC0BA2B00B1FAC7 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D3A971BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimator.h */,
+				8B9D3A981BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.h */,
+				8B9D3A991BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.m */,
+				8B9D3A9A1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.h */,
+				8B9D3A9B1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.m */,
+				8B9D3A9C1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.h */,
+				8B9D3A9D1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.m */,
+				8B9D3A9E1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.h */,
+				8B9D3A9F1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m */,
+				8B9D3AA01BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.h */,
+				8B9D3AA11BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +173,7 @@
 				TargetAttributes = {
 					1A8A14AE1BC0636A007E7533 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = LJQCNPGREG;
 					};
 				};
 			};
@@ -158,10 +214,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9D3A951BC0BA0D00B1FAC7 /* RightMenuViewController.m in Sources */,
 				15161F251BC07EA000FB6CBC /* ViewControllerLogin.m in Sources */,
+				8B9D3AA61BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				8B9D3AA21BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				1A8A14B71BC0636A007E7533 /* AppDelegate.m in Sources */,
+				8B9D3AA31BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				8B9D3AA41BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				8B9D3AA51BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				8B9D3AA91BC0BA5700B1FAC7 /* SlideNavigationController.m in Sources */,
 				15D306C01BC0B2250083847F /* ViewControllerSignUp.m in Sources */,
+				8B9D3A8F1BC0B9DB00B1FAC7 /* LeftMenuViewController.m in Sources */,
 				1A8A14B41BC0636A007E7533 /* main.m in Sources */,
+				8B9D3A921BC0B9EA00B1FAC7 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TutoRing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omarcarreon.TutoRing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -282,10 +350,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TutoRing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omarcarreon.TutoRing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -20,6 +20,10 @@
     
     self.btnSignUp.layer.cornerRadius = 15.0f;
     self.btnCancel.layer.cornerRadius = 15.0f;
+    
+    UITapGestureRecognizer *OffKeyboardtap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeKeyboard)];
+    [self.view addGestureRecognizer:OffKeyboardtap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,5 +40,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) removeKeyboard
+{
+    [self.view endEditing:YES];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 @end

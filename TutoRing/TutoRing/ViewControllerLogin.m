@@ -9,6 +9,7 @@
 #import "ViewControllerLogin.h"
 
 @interface ViewControllerLogin ()
+@property (weak, nonatomic) IBOutlet UIButton *btnLogIn;
 
 @end
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _btnLogIn.layer.cornerRadius = 8.0f;
+    
+    UITapGestureRecognizer *OffKeyboardtap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeKeyboard)];
+    [self.view addGestureRecognizer:OffKeyboardtap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +44,15 @@
 - (IBAction)unwindSignUp:(UIStoryboardSegue *)segue
 {
     
+}
+
+- (void) removeKeyboard
+{
+    [self.view endEditing:YES];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end
