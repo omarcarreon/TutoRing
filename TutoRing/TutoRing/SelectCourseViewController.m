@@ -29,6 +29,9 @@
     [self.backbutton setHidden:YES];
     [self.submitbutton setHidden:YES];
     [self.continuebutton setHidden:NO];
+    self.backbutton.layer.cornerRadius = 15.0f;
+    self.continuebutton.layer.cornerRadius = 15.0f;
+    self.submitbutton.layer.cornerRadius = 15.0f;
 
 }
 
@@ -106,6 +109,7 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
+    
     
 }
 
