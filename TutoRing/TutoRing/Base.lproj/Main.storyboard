@@ -32,7 +32,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="menu" textLabel="sn2-P8-azx" style="IBUITableViewCellStyleDefault" id="66J-oZ-mLv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="menu" textLabel="sn2-P8-azx" style="IBUITableViewCellStyleDefault" id="66J-oZ-mLv">
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="66J-oZ-mLv" id="Q3i-jp-Zbq">
@@ -44,7 +44,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -69,24 +69,137 @@
             </objects>
             <point key="canvasLocation" x="-774.5" y="-308.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="pxD-WA-pVp">
+        <!--Profile View Controller-->
+        <scene sceneID="D4w-tU-BdU">
             <objects>
-                <viewController id="iWV-72-BNe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="Ql2-Yg-Xzu" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eAj-eD-cvE"/>
-                        <viewControllerLayoutGuide type="bottom" id="DLB-0D-rYO"/>
+                        <viewControllerLayoutGuide type="top" id="Xd3-Wd-DkK"/>
+                        <viewControllerLayoutGuide type="bottom" id="umF-Zc-uch"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FM4-Gh-whN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Wfb-xM-11y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aij-J9-ldg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5U-Sd-wFp">
+                                        <rect key="frame" x="13" y="27" width="30" height="30"/>
+                                        <animations/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="iIF-Wm-X4f" kind="show" id="0rc-dA-oTo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cX-4D-f9A">
+                                        <rect key="frame" x="153" y="31" width="69" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.89165088380000002" green="0.39229240119999997" blue="0.33431130240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.44429029920000002" blue="0.37660843519999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZD8-mr-LtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ex8-aD-0jt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="-348"/>
+            <point key="canvasLocation" x="553.5" y="-437.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="mED-GF-tV5">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="4IN-Cm-tOf" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="paM-IF-mkk"/>
+                        <viewControllerLayoutGuide type="bottom" id="cr0-td-Jne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bDh-na-3pf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUH-2u-neE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6de-8D-IhJ">
+                                        <rect key="frame" x="13" y="27" width="30" height="30"/>
+                                        <animations/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="iIF-Wm-X4f" kind="show" id="GRk-4f-OwQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adP-q8-ngr">
+                                        <rect key="frame" x="150" y="30" width="74" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.89165088380000002" green="0.39229240119999997" blue="0.33431130240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.44429029920000002" blue="0.37660843519999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9Y-F1-6h2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009.5" y="-437.5"/>
+        </scene>
+        <!--Become Tutor View Controller-->
+        <scene sceneID="akZ-fn-F1F">
+            <objects>
+                <viewController storyboardIdentifier="BecomeTutorViewController" id="TtY-rE-tFg" customClass="BecomeTutorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GYT-8a-KQU"/>
+                        <viewControllerLayoutGuide type="bottom" id="eQS-Ix-RzC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cxF-kD-byr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9b-Ps-Pac">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be2-lu-CMs">
+                                        <rect key="frame" x="13" y="27" width="30" height="30"/>
+                                        <animations/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="iIF-Wm-X4f" kind="show" id="dLz-7f-LXA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Become Tutor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvQ-2r-ozG">
+                                        <rect key="frame" x="125" y="30" width="125" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.89165088380000002" green="0.39229240119999997" blue="0.33431130240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.44429029920000002" blue="0.37660843519999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGe-vE-Afh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465.5" y="-437.5"/>
         </scene>
         <!--Right Menu View Controller-->
         <scene sceneID="Mhf-3s-ZS2">
@@ -416,16 +529,13 @@
                                 <animations/>
                                 <state key="normal" title="Button"/>
                             </button>
-
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please choose a Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDr-0c-81u">
                                 <rect key="frame" x="91" y="159" width="199" height="21"/>
-
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-4N-pQh">
                                 <rect key="frame" x="216" y="412" width="102" height="42"/>
                                 <animations/>
@@ -444,7 +554,6 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkf-NG-pwm">
                                 <rect key="frame" x="67" y="412" width="102" height="42"/>
-
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -493,9 +602,13 @@
     </scenes>
     <resources>
         <image name="Alex OP.JPG" width="2448" height="2448"/>
+        <image name="back" width="64" height="64"/>
         <image name="location" width="64" height="64"/>
         <image name="logo.png" width="4034" height="4020"/>
         <image name="menuSelected" width="64" height="64"/>
         <image name="searchSelected" width="64" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dLz-7f-LXA"/>
+    </inferredMetricsTieBreakers>
 </document>

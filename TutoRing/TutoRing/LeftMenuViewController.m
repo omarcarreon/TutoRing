@@ -61,7 +61,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -73,6 +73,9 @@
     }
     else if (indexPath.row == 1) {
         cell.textLabel.text = @"Settings";
+    }
+    else if (indexPath.row == 2){
+        cell.textLabel.text = @"Become Tutor";
     }
     else {
         cell.textLabel.text = @"Log Out";
@@ -88,6 +91,39 @@
     
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+    UIViewController *vc ;
+    
+    switch (indexPath.row)
+    {
+        case 0:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
+            break;
+            
+        case 1:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"SettingsViewController"];
+            break;
+            
+        case 2:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"BecomeTutorViewController"];
+            break;
+            
+        case 3:
+            [_configMenu deselectRowAtIndexPath:[_configMenu indexPathForSelectedRow] animated:YES];
+            [[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
+            return;
+            break;
+    }
+    
+    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
+                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                     andCompletion:nil];
 }
 
 - (UIColor *)colorFromHexString:(NSString *)hexString {
