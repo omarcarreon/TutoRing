@@ -50,9 +50,15 @@
 	
     _tutoRingMapView.delegate = self;
     
+    UITapGestureRecognizer *OffKeyboardtap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeKeyboard)];
+    [self.view addGestureRecognizer:OffKeyboardtap];
     
 }
-
+- (void) removeKeyboard
+{
+    [self.view endEditing:YES];
+}
 
 - (IBAction)returnToUserLocation:(id)sender {
     
