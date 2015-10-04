@@ -58,6 +58,14 @@
     return pickerData[row];
 }
 
+- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSString *text = pickerData[row];
+    NSAttributedString *attString = [[NSAttributedString alloc] initWithString:text attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    return attString;
+}
+
 /*
 #pragma mark - Navigation
 
