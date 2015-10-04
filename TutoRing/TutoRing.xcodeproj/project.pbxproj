@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		15161F251BC07EA000FB6CBC /* ViewControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 15161F241BC07EA000FB6CBC /* ViewControllerLogin.m */; settings = {ASSET_TAGS = (); }; };
+		15D306BD1BC0A9C40083847F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D306BC1BC0A9C40083847F /* logo.png */; settings = {ASSET_TAGS = (); }; };
+		15D306C01BC0B2250083847F /* ViewControllerSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */; settings = {ASSET_TAGS = (); }; };
 		1A8A14B41BC0636A007E7533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A14B31BC0636A007E7533 /* main.m */; };
 		1A8A14B71BC0636A007E7533 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A14B61BC0636A007E7533 /* AppDelegate.m */; };
 		1A8A14BD1BC0636B007E7533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A14BB1BC0636B007E7533 /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 /* Begin PBXFileReference section */
 		15161F231BC07EA000FB6CBC /* ViewControllerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLogin.h; sourceTree = "<group>"; };
 		15161F241BC07EA000FB6CBC /* ViewControllerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLogin.m; sourceTree = "<group>"; };
+		15D306BC1BC0A9C40083847F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		15D306BE1BC0B2250083847F /* ViewControllerSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerSignUp.h; sourceTree = "<group>"; };
+		15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSignUp.m; sourceTree = "<group>"; };
 		1A8A14AF1BC0636A007E7533 /* TutoRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutoRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8A14B31BC0636A007E7533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A8A14B51BC0636A007E7533 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,11 +66,14 @@
 				1A8A14B51BC0636A007E7533 /* AppDelegate.h */,
 				1A8A14B61BC0636A007E7533 /* AppDelegate.m */,
 				1A8A14BB1BC0636B007E7533 /* Main.storyboard */,
+				15D306BE1BC0B2250083847F /* ViewControllerSignUp.h */,
+				15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */,
 				15161F231BC07EA000FB6CBC /* ViewControllerLogin.h */,
 				15161F241BC07EA000FB6CBC /* ViewControllerLogin.m */,
 				1A8A14BE1BC0636B007E7533 /* Assets.xcassets */,
 				1A8A14C01BC0636B007E7533 /* LaunchScreen.storyboard */,
 				1A8A14C31BC0636B007E7533 /* Info.plist */,
+				15D306BC1BC0A9C40083847F /* logo.png */,
 				1A8A14B21BC0636A007E7533 /* Supporting Files */,
 			);
 			path = TutoRing;
@@ -136,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D306BD1BC0A9C40083847F /* logo.png in Resources */,
 				1A8A14C21BC0636B007E7533 /* LaunchScreen.storyboard in Resources */,
 				1A8A14BF1BC0636B007E7533 /* Assets.xcassets in Resources */,
 				1A8A14BD1BC0636B007E7533 /* Main.storyboard in Resources */,
@@ -151,6 +160,7 @@
 			files = (
 				15161F251BC07EA000FB6CBC /* ViewControllerLogin.m in Sources */,
 				1A8A14B71BC0636A007E7533 /* AppDelegate.m in Sources */,
+				15D306C01BC0B2250083847F /* ViewControllerSignUp.m in Sources */,
 				1A8A14B41BC0636A007E7533 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

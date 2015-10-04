@@ -1,22 +1,25 @@
 //
-//  ViewControllerLogin.m
+//  ViewControllerSignUp.m
 //  TutoRing
 //
 //  Created by Alejandro Zamudio Guajardo on 10/3/15.
 //  Copyright © 2015 OmarCarreon. All rights reserved.
 //
 
-#import "ViewControllerLogin.h"
+#import "ViewControllerSignUp.h"
 
-@interface ViewControllerLogin ()
+@interface ViewControllerSignUp ()
 
 @end
 
-@implementation ViewControllerLogin
+@implementation ViewControllerSignUp
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.btnSignUp.layer.cornerRadius = 15.0f;
+    self.btnCancel.layer.cornerRadius = 15.0f;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,10 +36,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)unwindSignUp:(UIStoryboardSegue *)segue
-{
-    
-}
 
 @end
