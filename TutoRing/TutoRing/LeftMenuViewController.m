@@ -15,7 +15,6 @@
 
 @interface LeftMenuViewController () 
 
-@property (nonatomic, strong) NSMutableArray *options;
 
 @end
 
@@ -37,8 +36,6 @@
     self.imavProfileImage.layer.cornerRadius = self.imavProfileImage.frame.size.width/2;
     self.imavProfileImage.clipsToBounds = YES;
     
-    self.options = [[NSMutableArray alloc] initWithObjects:@"Profile", @"Settings", @"Log out", nil];
-    
     _configMenu.backgroundColor = [UIColor clearColor];
     _configMenu.delegate = self;
     [_configMenu reloadData];
@@ -46,6 +43,11 @@
     _configMenu.dataSource = self;
     _configMenu.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [_configMenu reloadData];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
@@ -61,7 +63,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,7 +76,9 @@
     else if (indexPath.row == 1) {
         cell.textLabel.text = @"Settings";
     }
-    else {
+    else if (indexPath.row == 2){
+        cell.textLabel.text = @"Become a tutor";
+    }else{
         cell.textLabel.text = @"Log Out";
     }
     
@@ -88,6 +92,38 @@
     
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    UIViewController *vc ;
+    
+    switch (indexPath.row)
+    {
+        case 0:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
+            break;
+            
+        case 1:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"SettingsViewController"];
+            break;
+            
+        case 2:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"BecomeTutorViewController"];
+            break;
+            
+        case 3:
+            [_configMenu deselectRowAtIndexPath:[_configMenu indexPathForSelectedRow] animated:YES];
+            [[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
+            return;
+            break;
+    }
+        
+    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
+                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                     andCompletion:nil];
 }
 
 - (UIColor *)colorFromHexString:(NSString *)hexString {
