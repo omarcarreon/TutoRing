@@ -106,39 +106,39 @@
     
     //DATOS DUMMYS
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = userLocation.coordinate;
-    point.title = @"Where am I?";
-    point.subtitle = @"I'm Here!!";
+    point.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.07, userLocation.coordinate.longitude);
+    point.title = @"Elí Emmanuel";
+    point.subtitle = @"PHP, iOS, Java";
     
     MKPointAnnotation *point2 = [[MKPointAnnotation alloc] init];
-    point2.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.001, userLocation.coordinate.longitude);
-    point2.title = @"Whuuuut?";
-    point2.subtitle = @"!?!?!?!?";
+    point2.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude + 0.06, userLocation.coordinate.longitude);
+    point2.title = @"Armando Galván";
+    point2.subtitle = @"Web Design, HTML";
     
     MKPointAnnotation *point3 = [[MKPointAnnotation alloc] init];
-    point3.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.01, userLocation.coordinate.longitude);
-    point3.title = @"Zareek";
-    point3.subtitle = @"Me la pela";
+    point3.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.02, userLocation.coordinate.longitude - 0.07);
+    point3.title = @"Juan Flores";
+    point3.subtitle = @"Branding, Marketing";
     
     MKPointAnnotation *point4 = [[MKPointAnnotation alloc] init];
-    point4.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.02, userLocation.coordinate.longitude);
-    point4.title = @"Juan";
-    point4.subtitle = @"Vive aqui";
+    point4.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.02, userLocation.coordinate.longitude + 0.04);
+    point4.title = @"Luis Felipe";
+    point4.subtitle = @"Android, Physics, iOS";
     
     MKPointAnnotation *point5 = [[MKPointAnnotation alloc] init];
-    point5.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.011, userLocation.coordinate.longitude);
-    point5.title = @"Omi";
-    point5.subtitle = @"El asiatico";
+    point5.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.046, userLocation.coordinate.longitude - 0.066);
+    point5.title = @"Omar Carreón";
+    point5.subtitle = @"Dynamics, iOS";
     
     MKPointAnnotation *point6 = [[MKPointAnnotation alloc] init];
-    point6.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.01, userLocation.coordinate.longitude);
-    point6.title = @"Zamudio";
-    point6.subtitle = @"El jeton";
+    point6.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.03, userLocation.coordinate.longitude- 0.007);
+    point6.title = @"Luis Juan";
+    point6.subtitle = @"Web Design, Android";
     
     MKPointAnnotation *point7 = [[MKPointAnnotation alloc] init];
-    point7.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.012, userLocation.coordinate.longitude);
-    point7.title = @"Zareek";
-    point7.subtitle = @"Me la pela";
+    point7.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.043, userLocation.coordinate.longitude + 0.056);
+    point7.title = @"Andrea Dlt";
+    point7.subtitle = @"Graphic Design, Branding, Singing";
     
     [_tutoRingMapView addAnnotations:@[point, point2, point3, point4, point5, point6, point7]];
     
