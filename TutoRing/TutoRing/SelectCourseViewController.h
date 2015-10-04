@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectCourseViewController : UIViewController
 
+@interface SelectCourseViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+- (IBAction)selectCourse:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *continuebutton;
+- (IBAction)submit:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *submitbutton;
+- (IBAction)backToCategory:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *backbutton;
+@property (weak, nonatomic) IBOutlet UILabel *lblMessage;
 @end
