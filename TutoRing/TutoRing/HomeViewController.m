@@ -130,7 +130,10 @@
     point.title = @"Elí Emmanuel";
     point.subtitle = @"PHP, iOS, Java";
     
-    if ([point.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point];
+    }
+    else if ([point.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
     } else {
         [puntos addObject:point];
@@ -141,7 +144,10 @@
     point2.title = @"Armando Galván";
     point2.subtitle = @"Web Design, HTML";
     
-    if ([point2.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point2];
+    }
+    else if ([point2.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
     } else {
         [puntos addObject:point2];
@@ -152,7 +158,10 @@
     point3.title = @"Juan Flores";
     point3.subtitle = @"Branding, Marketing";
     
-    if ([point3.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point3];
+    }
+    else if ([point3.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
     } else {
         [puntos addObject:point3];
@@ -163,7 +172,9 @@
     point4.title = @"Luis Felipe";
     point4.subtitle = @"Android, Physics, iOS";
     
-    if ([point4.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point4];
+    }else if ([point4.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
     } else {
         [puntos addObject:point4];
@@ -173,7 +184,9 @@
     point5.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.046, userLocation.coordinate.longitude - 0.066);
     point5.title = @"Omar Carreón";
     point5.subtitle = @"Dynamics, iOS";
-    if ([point5.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point5];
+    }else if ([point5.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
     } else {
         [puntos addObject:point5];
@@ -184,9 +197,11 @@
     point6.title = @"Luis Juan";
     point6.subtitle = @"Web Design, Android";
     
-    if ([point6.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point6];
+    }else if ([point6.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
-    } else {
+    }else {
         [puntos addObject:point6];
     }
     
@@ -194,7 +209,10 @@
     point7.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.043, userLocation.coordinate.longitude + 0.056);
     point7.title = @"Andrea Dlt";
     point7.subtitle = @"Graphic Design, Branding, Singing";
-    if ([point7.subtitle rangeOfString:_searchString].location == NSNotFound) {
+    if([_searchString  isEqual: @""]) {
+        [puntos addObject:point7];
+    }
+    else if ([point7.subtitle rangeOfString:_searchString].location == NSNotFound) {
         NSLog(@"string does not contain bla");
     } else {
         [puntos addObject:point7];

@@ -30,6 +30,7 @@
 		8B9D3AA51BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3A9F1BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlide.m */; settings = {ASSET_TAGS = (); }; };
 		8B9D3AA61BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3AA11BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */; settings = {ASSET_TAGS = (); }; };
 		8B9D3AA91BC0BA5700B1FAC7 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D3AA81BC0BA5700B1FAC7 /* SlideNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		8BC5F7FF1BC19D4F00173E22 /* PurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5F7FE1BC19D4F00173E22 /* PurchaseViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8BD650E11BC0E60A0090BC81 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD650E01BC0E60A0090BC81 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		8B9D3AA11BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlideAndFade.m; sourceTree = "<group>"; };
 		8B9D3AA71BC0BA5700B1FAC7 /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
 		8B9D3AA81BC0BA5700B1FAC7 /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
+		8BC5F7FD1BC19D4F00173E22 /* PurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewController.h; sourceTree = "<group>"; };
+		8BC5F7FE1BC19D4F00173E22 /* PurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseViewController.m; sourceTree = "<group>"; };
 		8BD650E01BC0E60A0090BC81 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -142,6 +145,8 @@
 				8B88F51B1BC17C440005C641 /* SettingsViewController.m */,
 				8B88F51D1BC17C5D0005C641 /* BecomeTutorViewController.h */,
 				8B88F51E1BC17C5D0005C641 /* BecomeTutorViewController.m */,
+				8BC5F7FD1BC19D4F00173E22 /* PurchaseViewController.h */,
+				8BC5F7FE1BC19D4F00173E22 /* PurchaseViewController.m */,
 			);
 			path = TutoRing;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				8B9D3A951BC0BA0D00B1FAC7 /* RightMenuViewController.m in Sources */,
 				15161F251BC07EA000FB6CBC /* ViewControllerLogin.m in Sources */,
 				8B9D3AA61BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				8BC5F7FF1BC19D4F00173E22 /* PurchaseViewController.m in Sources */,
 				8B88F51C1BC17C440005C641 /* SettingsViewController.m in Sources */,
 				8B9D3AA21BC0BA2B00B1FAC7 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				8B88F5191BC17C1A0005C641 /* ProfileViewController.m in Sources */,

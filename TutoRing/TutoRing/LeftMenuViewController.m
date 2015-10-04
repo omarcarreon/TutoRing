@@ -61,7 +61,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,9 +72,12 @@
         cell.textLabel.text = @"Profile";
     }
     else if (indexPath.row == 1) {
-        cell.textLabel.text = @"Settings";
+        cell.textLabel.text = @"App Settings";
     }
-    else if (indexPath.row == 2){
+    else if (indexPath.row == 2) {
+        cell.textLabel.text = @"Purchase Points";
+    }
+    else if (indexPath.row == 3){
         cell.textLabel.text = @"Become Tutor";
     }
     else {
@@ -109,21 +112,26 @@
         case 1:
             vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"SettingsViewController"];
             break;
-            
         case 2:
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"BecomeTutorViewController"];
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"PurchaseViewController"];
             break;
             
         case 3:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"BecomeTutorViewController"];
+            break;
+            
+        case 4:
             [_configMenu deselectRowAtIndexPath:[_configMenu indexPathForSelectedRow] animated:YES];
             [[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
             return;
             break;
     }
-    
-    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
-                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
-                                                                     andCompletion:nil];
+    if (vc != nil) {
+        [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
+                                                                 withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                         andCompletion:nil];
+    }
+
 }
 
 - (UIColor *)colorFromHexString:(NSString *)hexString {
