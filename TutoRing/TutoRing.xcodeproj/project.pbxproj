@@ -112,16 +112,8 @@
 				1A8A14B51BC0636A007E7533 /* AppDelegate.h */,
 				1A8A14B61BC0636A007E7533 /* AppDelegate.m */,
 				1A8A14BB1BC0636B007E7533 /* Main.storyboard */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-				8BC424AC1BC12FD300C05FBD /* SelectCourseViewController.h */,
-				8BC424AD1BC12FD300C05FBD /* SelectCourseViewController.m */,
-=======
 				15D314EA1BC13975006C9D51 /* SelectCourseViewController.h */,
 				15D314EB1BC13975006C9D51 /* SelectCourseViewController.m */,
->>>>>>> origin/signupcontroller
-=======
->>>>>>> parent of b6c19d4... nuevos menus
 				15D306BE1BC0B2250083847F /* ViewControllerSignUp.h */,
 				15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */,
 				15161F231BC07EA000FB6CBC /* ViewControllerLogin.h */,
@@ -246,14 +238,7 @@
 				8B9D3AA91BC0BA5700B1FAC7 /* SlideNavigationController.m in Sources */,
 				15D306C01BC0B2250083847F /* ViewControllerSignUp.m in Sources */,
 				8B9D3A8F1BC0B9DB00B1FAC7 /* LeftMenuViewController.m in Sources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-				8BC424AE1BC12FD300C05FBD /* SelectCourseViewController.m in Sources */,
-=======
 				15D314EC1BC13975006C9D51 /* SelectCourseViewController.m in Sources */,
->>>>>>> origin/signupcontroller
-=======
->>>>>>> parent of b6c19d4... nuevos menus
 				1A8A14B41BC0636A007E7533 /* main.m in Sources */,
 				8B9D3A921BC0B9EA00B1FAC7 /* HomeViewController.m in Sources */,
 			);

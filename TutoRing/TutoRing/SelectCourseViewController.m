@@ -2,13 +2,11 @@
 //  SelectCourseViewController.m
 //  TutoRing
 //
-
 //  Created by Alejandro Zamudio Guajardo on 10/4/15.
 //  Copyright © 2015 OmarCarreon. All rights reserved.
 //
 
 #import "SelectCourseViewController.h"
-
 
 @interface SelectCourseViewController (){
     NSMutableArray *pickerData;
@@ -19,7 +17,6 @@
 @end
 
 @implementation SelectCourseViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -37,7 +34,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 // The number of columns of data
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
@@ -64,7 +60,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 - (IBAction)selectCourse:(UIButton *)sender {
     [self.backbutton setHidden:NO];
