@@ -98,6 +98,10 @@
     
     [_tutoRingMapView setRegion:region animated:YES];
     
+    NSLog(@"%f", userLocation.coordinate.latitude);
+    NSLog(@"%f", userLocation.coordinate.longitude);
+
+    
 #warning Usar método para generar MKPoints
     
     //DATOS DUMMYS
@@ -111,9 +115,37 @@
     point2.title = @"Whuuuut?";
     point2.subtitle = @"!?!?!?!?";
     
-    [_tutoRingMapView addAnnotations:@[point, point2]];
+    MKPointAnnotation *point3 = [[MKPointAnnotation alloc] init];
+    point3.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.01, userLocation.coordinate.longitude);
+    point3.title = @"Zareek";
+    point3.subtitle = @"Me la pela";
+    
+    MKPointAnnotation *point4 = [[MKPointAnnotation alloc] init];
+    point4.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.02, userLocation.coordinate.longitude);
+    point4.title = @"Juan";
+    point4.subtitle = @"Vive aqui";
+    
+    MKPointAnnotation *point5 = [[MKPointAnnotation alloc] init];
+    point5.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.011, userLocation.coordinate.longitude);
+    point5.title = @"Omi";
+    point5.subtitle = @"El asiatico";
+    
+    MKPointAnnotation *point6 = [[MKPointAnnotation alloc] init];
+    point6.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.01, userLocation.coordinate.longitude);
+    point6.title = @"Zamudio";
+    point6.subtitle = @"El jeton";
+    
+    MKPointAnnotation *point7 = [[MKPointAnnotation alloc] init];
+    point7.coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude - 0.012, userLocation.coordinate.longitude);
+    point7.title = @"Zareek";
+    point7.subtitle = @"Me la pela";
+    
+    [_tutoRingMapView addAnnotations:@[point, point2, point3, point4, point5, point6, point7]];
     
 }
+
+
+
 
 
 @end
