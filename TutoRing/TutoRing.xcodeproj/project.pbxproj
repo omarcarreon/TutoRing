@@ -11,6 +11,7 @@
 		15D306BD1BC0A9C40083847F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D306BC1BC0A9C40083847F /* logo.png */; settings = {ASSET_TAGS = (); }; };
 		15D306C01BC0B2250083847F /* ViewControllerSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */; settings = {ASSET_TAGS = (); }; };
 		15D314E61BC102C2006C9D51 /* Alex OP.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 15D314E51BC102C2006C9D51 /* Alex OP.JPG */; settings = {ASSET_TAGS = (); }; };
+		15D314EC1BC13975006C9D51 /* SelectCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D314EB1BC13975006C9D51 /* SelectCourseViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1A8A14B41BC0636A007E7533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A14B31BC0636A007E7533 /* main.m */; };
 		1A8A14B71BC0636A007E7533 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A14B61BC0636A007E7533 /* AppDelegate.m */; };
 		1A8A14BD1BC0636B007E7533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A14BB1BC0636B007E7533 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		15D306BE1BC0B2250083847F /* ViewControllerSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerSignUp.h; sourceTree = "<group>"; };
 		15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSignUp.m; sourceTree = "<group>"; };
 		15D314E51BC102C2006C9D51 /* Alex OP.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alex OP.JPG"; sourceTree = "<group>"; };
+		15D314EA1BC13975006C9D51 /* SelectCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCourseViewController.h; sourceTree = "<group>"; };
+		15D314EB1BC13975006C9D51 /* SelectCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCourseViewController.m; sourceTree = "<group>"; };
 		1A8A14AF1BC0636A007E7533 /* TutoRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutoRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8A14B31BC0636A007E7533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A8A14B51BC0636A007E7533 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,8 +124,13 @@
 				1A8A14B51BC0636A007E7533 /* AppDelegate.h */,
 				1A8A14B61BC0636A007E7533 /* AppDelegate.m */,
 				1A8A14BB1BC0636B007E7533 /* Main.storyboard */,
+<<<<<<< HEAD
 				8BC424AC1BC12FD300C05FBD /* SelectCourseViewController.h */,
 				8BC424AD1BC12FD300C05FBD /* SelectCourseViewController.m */,
+=======
+				15D314EA1BC13975006C9D51 /* SelectCourseViewController.h */,
+				15D314EB1BC13975006C9D51 /* SelectCourseViewController.m */,
+>>>>>>> origin/signupcontroller
 				15D306BE1BC0B2250083847F /* ViewControllerSignUp.h */,
 				15D306BF1BC0B2250083847F /* ViewControllerSignUp.m */,
 				15161F231BC07EA000FB6CBC /* ViewControllerLogin.h */,
@@ -255,7 +263,11 @@
 				8B9D3AA91BC0BA5700B1FAC7 /* SlideNavigationController.m in Sources */,
 				15D306C01BC0B2250083847F /* ViewControllerSignUp.m in Sources */,
 				8B9D3A8F1BC0B9DB00B1FAC7 /* LeftMenuViewController.m in Sources */,
+<<<<<<< HEAD
 				8BC424AE1BC12FD300C05FBD /* SelectCourseViewController.m in Sources */,
+=======
+				15D314EC1BC13975006C9D51 /* SelectCourseViewController.m in Sources */,
+>>>>>>> origin/signupcontroller
 				1A8A14B41BC0636A007E7533 /* main.m in Sources */,
 				8B9D3A921BC0B9EA00B1FAC7 /* HomeViewController.m in Sources */,
 				8BC424B81BC133DB00C05FBD /* BecomeTutorViewController.m in Sources */,
